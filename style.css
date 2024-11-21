@@ -1,4 +1,134 @@
-html {
-  height: 100%;
-  width: 100%;
+/* Reset some default browser styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: #E9E9E9;
+}
+
+.footer-text {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20%;
+    font-family: 'DM Sans', Arial, sans-serif;
+}
+
+.footer-text h1 {
+    line-height: 1;
+    font-family: 'Geist', 'DM Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+body {
+    background-color: #F8F8F8; /* Optional background for contrast */
+    font-family: 'DM Sans', Arial, sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+    position: fixed; /* Position navbar above the home image */
+    top: 20px; /* Distance from the top of the screen */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the navbar */
+    display: inline-flex;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    /*width: 90%; /* Adjust width as necessary */
+    /*max-width: 400px; /* Max width */
+    background: rgba(255, 255, 255, 0.3); /* Light transparency with white background */
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+}
+
+/* Navbar links */
+.nav-item {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333; /* Neutral text color */
+    padding: 8px 16px;
+    border-radius: 20px; /* Rounded for hover effects */
+    transition: all 0.3s ease; /* Smooth transition for hover states */
+}
+
+/* Active and hover state */
+.nav-item.active {
+    background: #F8F8F8; /* Active background */
+    color: #181818; /* Text color remains consistent */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for active state */
+}
+
+/* Home image styling */
+.home-image {
+    width: calc(100% - 16px); /* Full width minus margin */
+    height: calc(100% - 16px); /* Full height minus margin */
+    margin: 8px;
+    border-radius: 16px; /* Adjust for more or less rounding */
+    overflow: hidden; /* Ensures content respects the rounded corners */
+    background-image: url('./assets/images/background.jpg');
+    background-size: cover; /* Ensures the image covers the rectangle */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    display: flex; /* Enables text to center inside the rectangle */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+/* Text container styles */
+.home-text {
+    color: white; /* Makes the text readable on the background image */
+    text-align: center; /* Centers the text */
+    padding: 10px;
+    border-radius: 0px; /* Matches the rounded feel */
+}
+
+/* Large heading */
+.home-text h1 {
+    font-weight: normal;
+    font-size: 5rem;
+    line-height: 1.2; /* Adjust spacing between lines */
+    margin: 0 0 16px; /* Adds spacing below the heading */
+}
+
+/* Subtitle */
+.home-text p {
+    font-size: 1.2rem;
+    line-height: 1.6; /* Adjust spacing for readability */
+    margin: 0;
+}
+
+.sections {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+#experience {
+    background-color: lightblue;
+    padding: 15px;
+}
+
+#education {
+    background-color: lightgreen;
+    padding: 15px;
+}
+
+#projects {
+    background-color: lightcoral;
+    padding: 15px;
 }
