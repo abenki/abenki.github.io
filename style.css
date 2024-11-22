@@ -38,22 +38,22 @@ body {
     transform: translateX(-50%); /* Centers the navbar */
     display: inline-flex;
     align-items: center;
-    padding: 8px;
-    gap: 8px;
-    /*width: 90%; /* Adjust width as necessary */
-    /*max-width: 400px; /* Max width */
+    padding: 4px;
+    gap: 4px;
     background: rgba(255, 255, 255, 0.3); /* Light transparency with white background */
     border-radius: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Navbar links */
 .nav-item {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
-    color: #333; /* Neutral text color */
+    color: #222; /* Neutral text color */
     padding: 8px 16px;
     border-radius: 20px; /* Rounded for hover effects */
     transition: all 0.3s ease; /* Smooth transition for hover states */
@@ -61,8 +61,8 @@ body {
 
 /* Active and hover state */
 .nav-item.active {
-    background: #F8F8F8; /* Active background */
-    color: #181818; /* Text color remains consistent */
+    background: rgba(255, 255, 255, 0.7); /* Active background */
+    color: #000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for active state */
 }
 
