@@ -1,55 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Scaling for mobile devices -->
-    <title>abenki labs</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Anass Benkirane</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
-    <!-- Navigation bar -->
-    <nav class="navbar">
-        <a href="#" class="nav-item active">Home</a>
-        <a href="#experience" class="nav-item">Experience</a>
-        <a href="#education" class="nav-item">Education</a>
-        <a href="#projects" class="nav-item">Projects</a>
-    </nav>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div>
+      <a class="nav__logo" href="#">abenki labs.</a>
+    </div>
+    <div class="nav__links">
+      <a class="nav__link" href="https://www.linkedin.com/in/anassbenkirane/">LinkedIn</a>
+      <a class="nav__link" href="https://github.com/abenki">GitHub</a>
+      <a class="btn btn--primary" href="mailto:contact.abenki@gmail.com">Reach out</a>
+    </div>
+  </nav>
 
-    <!-- Home image -->
-    <div class="home-image">
-        <div class="home-text">
-            <h1>Hi, <br>I am Anass Benkirane.</h1>
-            <p>
-                As a machine learning engineer, I help companies develop software products using AI
-                to push forward innovations in tech and scientific industries.
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__pattern bg-dot-pattern"></div>
+    <div class="hero__content">
+      <div>
+        <h1 class="hero__title">
+          Anass <br />
+          <span class="text-primary">Benkirane</span>
+        </h1>
+        <p class="hero__subtitle">
+          ML Engineer developing LLM systems and AI pipelines, collaborating with teams to deliver measurable impact.
+        </p>
+        <div class="hero__buttons">
+          <a class="btn btn--primary btn--lg" href="mailto:contact.abenki@gmail.com">Reach out</a>
+          <a class="btn btn--outline btn--lg" href="https://www.linkedin.com/in/anassbenkirane/">LinkedIn</a>
+          <a class="btn btn--outline btn--lg" href="https://github.com/abenki">GitHub</a>
+        </div>
+      </div>
+      <div class="hero__image-wrapper">
+        <div class="hero__image-container">
+          <div class="hero__image-inner">
+            <img alt="Abstract wireframe render" class="hero__image"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdc1vnEF2EcCwpAqGbqTDQcMMCzzB2rINCvjNz0ECD2tCbZSZ8NiLhfiSSOdFk7Y7vlWUm8xoi71PHrxRHgr2hWdJpBYvmr3YUoEIwWylnJ0QAjeMPXBjGIIoccnbCEuiqZDU13eEw_3GttD6fxA2GZ3GblNVa5jfV_F4B377UU8XQoaiHmrh1Xz5YGbIb2z17dSMPCJgYS-vLbKijqiE3EopV1JI9sZLwcIQGpSYpP_aoSqAFxBRnO9pSYrgTzEasnk_YJsWgiT4" />
+            <div class="hero__image-label">render_v2.obj</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__banner">
+      <div class="hero__banner-grid bg-grid-pattern"></div>
+      <div class="hero__banner-content">
+        <svg class="hero__banner-svg" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-50 350 L200 150 L350 350 M200 150 L200 -50" stroke-width="1"></path>
+          <rect height="100" stroke-width="1" transform="rotate(15 200 150)" width="100" x="150" y="100"></rect>
+          <circle cx="500" cy="150" r="80" stroke-dasharray="4 4" stroke-width="1"></circle>
+          <path d="M500 150 L750 250 L850 50" stroke-width="1"></path>
+          <path d="M600 350 V150 H850" stroke-width="1"></path>
+          <circle cx="200" cy="150" fill="currentColor" r="5"></circle>
+          <circle cx="500" cy="150" fill="currentColor" r="5"></circle>
+          <circle cx="750" cy="250" fill="currentColor" r="5"></circle>
+        </svg>
+        <div class="hero__banner-overlay">
+          <img alt="Abstract wireframe background"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIVVEL13wvA3TgUl9spDOJq--pDDJYvrprhp9p-cvj1Udei3DalCFa-QeJfFEonm3UtiklF734RFjQZYwhZUQ44D_agxubJ1qn6zvXnNA46f_DeU0eiEluRvXg0iAduz82tL9efeUpY65PxmC6V7ybeSBue_BHQmx5tPtHPDf-Dm6nmP9tLfWNs2Zddz6L3dP1QE15L0YHDzXeG6_WETUkTP9gxYlIePC1hMlWkHyVng9v0cfLTuqEZVAlhYj-EkwXinTtCwBgArM" />
+        </div>
+      </div>
+      <div class="hero__banner-label">FIG 3.1: INTERFACE TOPOLOGY</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section-projects" id="featured">
+    <div class="container">
+      <div class="section-projects__header">
+        <h2 class="section-projects__title font-display">Personal projects</h2>
+        <span class="section-projects__index">INDEX: 01-03</span>
+      </div>
+      <div class="projects-grid">
+        <!-- Featured Project -->
+        <article class="card card--featured">
+          <div class="card__image-wrapper">
+            <div class="card__image-overlay"></div>
+            <img alt="Craft Code application screenshot" class="card__image"
+              src="assets/img/craft-code-screenshot.png" />
+            <div class="card__image-badge">Latency: 12ms</div>
+          </div>
+          <div class="card__body card__body--relative">
+            <div>
+              <div class="card__category">01 — AGENTIC CODING</div>
+              <h3 class="card__title font-display">Craft Code</h3>
+              <p class="card__description">
+                A coding agent designed to be minimal and local-first. It can be used with LLMs running 
+                locally through Ollama or LM Studio, ensuring privacy and control over your code generation 
+                tasks. You can provide an API key to use OpenAI or Mistral models.
+              </p>
+              <div class="card__tags">
+                <span class="tag">Python</span>
+                <span class="tag">Textual</span>
+                <span class="tag">OpenAI SDK</span>
+              </div>
+            </div>
+            <div class="card__actions">
+              <a class="btn btn--outline btn--sm" href="#">TRY IT</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card card--accented">
+          <div class="card__accent-bl"></div>
+          <div class="card__accent-br"></div>
+          <div class="card__image-wrapper card__image-wrapper--ratio card__image-wrapper--pattern">
+            <img alt="Circuit board macro shot" class="card__image"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUvGn-WqQt0swdA0UnMnHEumnTHKtkbeDae-ZkV0AnqUqZt6iJlPyjf25IJ0hNdXbVgruGI-SMYSJiron7S3pYgrWyYFPTkIurrFW5_XmEvYZ2ReX-aC8lBI7c78Zrb5L4th4-VB4piYDJ804kvl2BOEdHEj9g0rTEsuvQK7Yslu41V0k14TYXugY1IaOCkz9rO3alyF9UiM9Czmgk8dbbwUhKmiVenMUe1TPozCaiX3v9IztijyHm3PgtzYXRG5KtkMKS9KpCTRk" />
+          </div>
+          <div class="card__body">
+            <div class="card__category">02 — FINE-TUNING</div>
+            <h3 class="card__title font-display">Pandas Copilot</h3>
+            <p class="card__description">
+              Fine-tuning an LLM to specialize it in generating Pandas code snippets from natural language.
             </p>
-        </div>
-    </div>
+            <div class="card__footer">
+              <span class="card__footer-tech">Python, PyTorch</span>
+              <a class="card__footer-link" href="https://github.com/abenki/pandas-copilot">View Repository -&gt;</a>
+            </div>
+          </div>
+        </article>
 
-    <!-- Sections -->
-    <div class="sections">
-        <div class="section" id="experience">
-            <h2>Experience</h2>
-            <p>This is the Experience section.</p>
-        </div>
-        <div class="section" id="education">
-            <h2>Education</h2>
-            <p>This is the Education section.</p>
-        </div>
-        <div class="section" id="projects">
-            <h2>Projects</h2>
-            <p>This is the Projects section.</p>
-        </div>
-    </div>
+        <!-- Project 3 -->
+        <article class="card">
+          <div class="card__image-wrapper card__image-wrapper--ratio card__image-wrapper--dark">
+            <div class="card__image-wrapper--dark-inner">
+              <div class="card__image-wrapper--dark-frame">
+                <img alt="Matrix code screen" class="card__image"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIck_Wiz8ulp7Qri5TNOnDIBw-0Meb47pyH1Zg9ndSMk2In_aw91vZzeYbVg6B6V9g34UTirtA9Y8b7Rd59jhgAkOarVE6227V7EBWyDzLTMDTXknjVatiLLFLaVpHYEG0OzhqOuUD-MIaaqv72guoYdcS3XvYXBKY2llgWVaPtpb7f989dL0AhgWCr12H946QRsQlL0m5ph3wbN5DyCTXkVMOw-wW7J42h0L8v2r077QEmi4f6Bqq5gQDrUrIWQLOQUCQqcU9OXg" />
+              </div>
+            </div>
+          </div>
+          <div class="card__body">
+            <div class="card__category">03 — LLM PRETRAINING</div>
+            <h3 class="card__title font-display">NanoGPT</h3>
+            <p class="card__description">
+              Pre-training from scratch of a 10M parameters GPT model, able to generate
+              Shakespeare-like text.
+            </p>
+            <div class="card__footer">
+              <span class="card__footer-tech">Python, PyTorch</span>
+              <a class="card__footer-link" href="https://github.com/abenki/nanogpt">View Repository -&gt;</a>
+            </div>
+          </div>
+        </article>
 
-    <script src="script.js"></script>
+        <!-- About Me -->
+        <article class="card card--research">
+          <div class="card--research__bg-pattern"></div>
+          <div class="card--research__circle"></div>
+          <div class="card--research__content">
+            <div>
+              <div class="card--research__category">04 — ABOUT ME</div>
+              <h3 class="card--research__title font-display">Interests</h3>
+              <p class="card--research__description">
+                I have a strong interest in machine learning and software engineering. Advances in 
+                generative AI have driven my focus toward agentic coding and building AI systems 
+                that can understand and write code or text. I also care deeply about product design 
+                and creating clean, beautiful, and intuitive user interfaces. I believe that good 
+                design is essential for making technology attractive and drive user adoption.
+              </p>
+            </div>
+            <div class="card--research__paper">
+              <div class="card--research__paper-inner">
+                <div class="card--research__paper-line"></div>
+                <div class="card--research__paper-line card--research__paper-line--short"></div>
+                <div class="card--research__paper-lines">
+                  <div class="card--research__paper-line-sm"></div>
+                  <div class="card--research__paper-line-sm"></div>
+                  <div class="card--research__paper-line-sm"></div>
+                  <div class="card--research__paper-line-sm card--research__paper-line-sm--3-4"></div>
+                </div>
+                <div class="card--research__paper-lines">
+                  <div class="card--research__paper-line-sm"></div>
+                  <div class="card--research__paper-line-sm"></div>
+                  <div class="card--research__paper-line-sm card--research__paper-line-sm--5-6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section-experience">
+    <div class="experience__sidebar">
+      <div class="experience__sidebar-pattern bg-dot-pattern"></div>
+      <div class="experience__sidebar-content">
+        <h1 class="experience__sidebar-title font-display">
+          Building the<br />
+          <span class="text-primary">technical</span><br />
+          foundation.
+        </h1>
+        <p class="experience__sidebar-subtitle font-ui">
+          A timeline of learning, shaping expertise in software, AI, and the design of intelligent systems.
+        </p>
+        <div class="experience__competencies">
+          <h3 class="experience__competencies-title">Core Competencies</h3>
+          <ul class="experience__competencies-list">
+            <li class="experience__competencies-item">
+              <span class="experience__competencies-check">&#10003;</span>
+              Machine Learning
+            </li>
+            <li class="experience__competencies-item">
+              <span class="experience__competencies-check">&#10003;</span>
+              Large Language Models
+            </li>
+            <li class="experience__competencies-item">
+              <span class="experience__competencies-check">&#10003;</span>
+              Agentic AI
+            </li>
+            <li class="experience__competencies-item">
+              <span class="experience__competencies-check">&#10003;</span>
+              Software development
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="experience__sidebar-number">03</div>
+    </div>
+    <div class="experience__main">
+      <div class="experience__timeline">
+        <h2 class="experience__timeline-header">
+          <span>Professional History</span>
+        </h2>
+        <div class="experience__timeline-items">
+          <div class="experience__timeline-line"></div>
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-item__content">
+              <div class="timeline-item__meta">
+                <div class="timeline-item__dot"></div>
+                <div class="timeline-item__date font-ui">Mar 2023 — Present</div>
+                <div class="timeline-item__company">Orange</div>
+              </div>
+              <div class="timeline-item__details">
+                <h3 class="timeline-item__title font-display">Machine Learning Engineer</h3>
+                <p class="timeline-item__description">
+                  Developed enterprise-scale AI systems for telecommunication networks, including 
+                  an agentic AI platform integrating LLMs, domain knowledge bases, and operational 
+                  tools. Built a specialized 3GPP agent using retrieval-augmented generation and 
+                  vector databases to deliver accurate, source-grounded technical answers. In 
+                  parallel, worked on applied ML and signal processing for Distributed Acoustic 
+                  Sensing (DAS), designing pipelines for acoustic event detection from 
+                  large-scale fiber sensing data.
+                </p>
+                <div class="timeline-item__tags">
+                  <span class="tag tag--outline">Agentic AI</span>
+                  <span class="tag tag--outline">Applied ML</span>
+                  <span class="tag tag--outline">Telecom networks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-item__content">
+              <div class="timeline-item__meta">
+                <div class="timeline-item__dot timeline-item__dot--inactive"></div>
+                <div class="timeline-item__date font-ui">Apr 2022 - Sep 2022</div>
+                <div class="timeline-item__company">Dashlane</div>
+              </div>
+              <div class="timeline-item__details">
+                <h3 class="timeline-item__title font-display">Machine Learning Engineer</h3>
+                <p class="timeline-item__description">
+                  Worked on web document embeddings to train deep learning models on HTML documents, 
+                  with applications to web form classification. Led research efforts to improve 
+                  Autofill feature using transformer-based architectures. Maintained and documented
+                  production ML models and training pipelines, ensuring stability, scalability, and
+                  reproducibility. Refactored the web form data collection API by rewriting it in 
+                  TypeScript with TypeORM, removing embedded SQL, and improving maintainability.
+
+                </p>
+                <div class="timeline-item__tags">
+                  <span class="tag tag--outline">Python</span>
+                  <span class="tag tag--outline">Tensorflow / Keras</span>
+                  <span class="tag tag--outline">TypeScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-item__content">
+              <div class="timeline-item__meta">
+                <div class="timeline-item__dot timeline-item__dot--inactive"></div>
+                <div class="timeline-item__date font-ui">Jun 2021 - Aug 2021</div>
+                <div class="timeline-item__company">Sensity</div>
+              </div>
+              <div class="timeline-item__details">
+                <h3 class="timeline-item__title font-display">Software Engineer, Machine Learning</h3>
+                <p class="timeline-item__description">
+                  Worked on machine learning for deepfake detection. Performed data collection, 
+                  implemented a pipeline to transform raw videos into training data. Learned to
+                  work in agile early-stage startup environment.
+                </p>
+                <div class="timeline-item__tags">
+                  <span class="tag tag--outline">Python</span>
+                  <span class="tag tag--outline">PyTorch</span>
+                  <span class="tag tag--outline">OpenCV</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Section -->
+      <div class="experience__education">
+        <div class="experience__education-pattern bg-dot-pattern"></div>
+        <h2 class="experience__education-header">
+          <span>Academic Credentials</span>
+        </h2>
+        <div class="experience__education-grid">
+          <div class="education-card">
+            <div class="education-card__header">
+              <div class="education-card__year">2019 - 2022</div>
+            </div>
+            <h4 class="education-card__degree">M.S. Computer Science</h4>
+            <p class="education-card__school">Telecom SudParis</p>
+            <p class="education-card__description">
+              Specialization in Artificial Intelligence. Thesis: "Prediction of muscle damage based on histological sections".
+            </p>
+          </div>
+          <div class="education-card">
+            <div class="education-card__header">
+              <div class="education-card__year">2016 - 2019</div>
+            </div>
+            <h4 class="education-card__degree">Classes preparatoires aux grandes ecoles</h4>
+            <p class="education-card__school">Lycee Pierre de Fermat</p>
+            <p class="education-card__description">
+              An intensive undergraduate program in mathematics, physics, computer science and 
+              engineering to prepare for the national entrance exam to the French Grandes Ecoles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__brand">
+        <h4 class="footer__logo font-display">abenki labs.</h4>
+        <p class="footer__tagline">Engineered for impact.</p>
+      </div>
+      <div class="footer__links">
+        <a class="footer__link" href="https://github.com/abenki">GitHub</a>
+        <a class="footer__link" href="https://www.linkedin.com/in/anassbenkirane/">LinkedIn</a>
+        <a class="footer__link" href="mailto:contact.abenki@gmail.com">Email</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Anass Benkirane</span>
+      <span>All systems operational.</span>
+    </div>
+  </footer>
 </body>
-<footer>
-    <div class="footer-text">
-        <h1>abenki labs</h1>
-        <p>© Anass Benkirane, 2024</p>
-    </div>
-</footer>
+
 </html>
